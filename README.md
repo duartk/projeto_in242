@@ -8,14 +8,12 @@ Projeto da disciplina IN242
 5. Subir o codigo, arquivos do docker, notebook e csv no github.
 6. Enviar o link para lucio.oliveira@inatel.br até dia 5/10
 
-
 #Comandos
 
 Protect Private Key: chmod 400 aws.pem 
 Connet instance: ssh -i "private-key" ubuntu@"public_dns" -> ssh -i aws.pem ubuntu@ec2-18-228-159-69.sa-east-1.compute.amazonaws.com
 
 Atualizar pacotes: sudo apt update
-
 
 #Git
 
@@ -27,7 +25,6 @@ atualizar repositorio local: git pull
 
 Conectar servidor remoto ao repocitorio: git remote add origin "servidor"
 Obter um repositorio: git clone usuario@servidor: /caminho repositorio
-
 
 #Docker e Docker Compose
 
@@ -49,16 +46,13 @@ Adicionar o user ubunto no grupo docker
 sudo usermod -aG docker $USER
 -Necessário reiniciar o Ubuntu
 
-docker run hello-world
-
+Executar.....
+sudo docker login
+sudo docker run hello-world
 
 #Executar Arquivos .SH
 Permissão de execução: chmod +x filename.sh
 Executar arquivo: sudo ./filename.sh
-
-
-
-
 
 
 

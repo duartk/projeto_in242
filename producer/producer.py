@@ -7,7 +7,7 @@ import json
 
 print('Conectando ao mqtt broker...')
 mqtt_client = mqtt.Client()
-mqtt_client.connect('localhost', 1883, 60)
+mqtt_client.connect('18.228.159.69', 1883, 60)
 
 while True:
     temperatura = random.uniform(15,30)
@@ -15,5 +15,5 @@ while True:
     msg = {
         'temperatura': temperatura
     }
-    mqtt_client.publish('in242', json.dumps(msg), qos=0)
+    mqtt_client.publish('projeto_in242', json.dumps(msg), qos=0)
     time.sleep(1)

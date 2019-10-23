@@ -3,8 +3,8 @@ from pymongo import MongoClient
 import datetime
 import json
 
-mongo_client = MongoClient('localhost', 27017)
-mongo_db = mongo_client['inatel']
+mongo_client = MongoClient('18.228.159.69', 27017)
+mongo_db = mongo_client['projeto_in242']
 mongo_collection = mongo_db['in242']
 
 
@@ -18,7 +18,7 @@ def on_message(mqtt_client, obj, msg):
 
 print('configurando...')
 mqtt_client = mqtt.Client()
-mqtt_client.connect('localhost', 1883, 60)
+mqtt_client.connect('18.228.159.69', 1883, 60)
 mqtt_client.on_message = on_message
-mqtt_client.subscribe("in242/#", 0)
+mqtt_client.subscribe("projeto_in242/#", 0)
 mqtt_client.loop_forever()

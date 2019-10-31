@@ -10,21 +10,21 @@ Projeto da disciplina IN242
 
 #Comandos
 
-Protect Private Key: chmod 400 aws.pem 
-Connet instance: ssh -i "private-key" ubuntu@"public_dns" -> ssh -i aws.pem ubuntu@ec2-18-228-159-69.sa-east-1.compute.amazonaws.com
+Protect Private Key: chmod 400 aws.pem .
+Connet instance: ssh -i "private-key" ubuntu@"public_dns" -> ssh -i aws.pem ubuntu@ec2-18-228-159-69.sa-east-1.compute.amazonaws.com.
 
-Atualizar pacotes: sudo apt update
+Atualizar pacotes: sudo apt update.
 
 #Git
 
-git status
-adicionar ao index: git add "arquivo" / git add *
-confirmar mudanças: git commit -m "comentarios"
-enviar alterações ao repositorio remoto: git push origin master -> * Master pode ser alterado para qualquer ramo (branch)
-atualizar repositorio local: git pull
+git status.
+adicionar ao index: git add "arquivo" / git add *.
+confirmar mudanças: git commit -m "comentarios".
+enviar alterações ao repositorio remoto: git push origin master -> * Master pode ser alterado para qualquer ramo (branch).
+atualizar repositorio local: git pull.
 
-Conectar servidor remoto ao repocitorio: git remote add origin "servidor"
-Obter um repositorio: git clone usuario@servidor: /caminho repositorio
+Conectar servidor remoto ao repocitorio: git remote add origin "servidor".
+Obter um repositorio: git clone usuario@servidor: /caminho repositorio.
 
 #Docker e Docker Compose
 

@@ -27,7 +27,7 @@ while True:
     mqtt_client.publish('projeto_in242', json.dumps(msg), qos=0)
     time.sleep(0.5)
     # ====Publicando no Tago.io ===
-    payload = {'variable': 'temperatura', 'time': data, 'value': str(temperatura)}
+    payload = {'variable': 'temperatura', 'time': data, 'value': temperatura}
     my_device_1.insert(payload)
     print('Publicado na Tago.io')
     time.sleep(1)
